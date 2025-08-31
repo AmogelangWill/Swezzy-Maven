@@ -1,7 +1,8 @@
 // CMS Configuration
 const CMS_CONFIG = {
   // Replace YOUR_SHEET_ID with your actual Google Sheet ID
-  SHEET_ID: 'YOUR_SHEET_ID_HERE',
+  SHEET_ID: '  SHEET_ID: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRnShLpqdGMWEby1DreBaPnqrX7gT3h1S9fcsug7vJCpSjdyb_k5hmZwaT91vvP5RiuW0d6ArbB5ATf/pubhtml',
+',
   // Get this from: File → Share → Publish to web → CSV format
   get SHEET_URL() {
     return `https://docs.google.com/spreadsheets/d/${this.SHEET_ID}/gviz/tq?tqx=out:csv&sheet=Posts`;
@@ -253,4 +254,5 @@ function renderPageContent() {
   // Specific rendering logic will be in the updated main.js
   if (window.renderHomepage) window.renderHomepage();
   if (window.renderCategoryPage) window.renderCategoryPage();
+
 }
