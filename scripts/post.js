@@ -6,8 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fetchPosts().then(posts => {
     const post = posts.find(p => p.id === postId);
+
     if (!post) {
-      container.innerHTML = "<p>Post not found.</p>";
+      container.innerHTML = "<p>⚠️ Post not found.</p>";
       return;
     }
 
@@ -20,9 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <img src="${post.img}" alt="${post.title}" class="post-image">
         <div class="content">
-          <p>${post.content || "No content available."}</p>
+          <p>${post.content || "No content available yet."}</p>
         </div>
       </article>
     `;
+  }).catch(err => {
+    container.innerHTML = "<p>⚠️ Error loading post.</p>";
+    console.error(err);
   });
 });
