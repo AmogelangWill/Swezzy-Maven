@@ -164,6 +164,7 @@ body{font-family:Oswald,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0
 .submit-btn{background:var(--accent);color:#fff;border:0;padding:14px 32px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;transition:all .3s ease;width:100%}
 .submit-btn:hover{background:#007a2f;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,155,59,.3)}
 
+.single-post img, .post-image {max-width: 100%; height: auto; display: block; margin: 20px auto;}
 @media (max-width:768px){
 .brand-bar,.nav-bar{padding:0 1rem}
 .brand-right,.brand-left,.menu,.desktop-social{display:none}
