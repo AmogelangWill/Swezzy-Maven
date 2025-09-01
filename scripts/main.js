@@ -56,64 +56,63 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Collage (recent updates grid)
-    if (collage) {
-      posts.forEach(p => {
-        const diff = isoDateDaysDiff(p.date, today);
-        const card = document.createElement('article');
-        card.className = 'card ' + p.span;
-        card.innerHTML = `
-          <img src="${p.img}" alt="${p.title}">
-          <div class="meta">
-            <div>
-              <p class="title">${p.title}</p>
-              <p class="excerpt">${p.excerpt}</p>
-            </div>
-            <div>
-              <span class="tag">${p.tag}</span>
-              <p class="muted">${p.date}</p>
-            </div>
-          </div>
-        `;
-        card.onclick = () => openModal(p);
+if (collage) {
+  posts.forEach(p => {
+    const diff = isoDateDaysDiff(p.date, today);
+    const card = document.createElement('article');
+    card.className = 'card ' + (p.span || "span1x1"); // keep span classes
+    card.innerHTML = `
+      <img src="${p.img}" alt="${p.title}">
+      <div class="meta">
+        <div>
+          <p class="title">${p.title}</p>
+          <p class="excerpt">${p.excerpt}</p>
+        </div>
+        <div>
+          <span class="tag">${p.tag}</span>
+          <p class="muted">${p.date}</p>
+        </div>
+      </div>
+    `;
+    card.onclick = () => openModal(p);
 
-        // Only include if within 14 days
-        if (diff <= 14) {
-          collage.appendChild(card);
-        }
-      });
+    if (diff <= 14) {
+      collage.appendChild(card);
     }
+  });
+}
 
-    // Trending section
-    if (trendingList) {
-      posts.filter(p => p.trending === "TRUE").slice(0, 6).forEach(p => {
-        const trendingItem = document.createElement('div');
-        trendingItem.className = 'trending-item';
-        trendingItem.innerHTML = `
-          <img src="${p.img}" alt="${p.title}">
-          <div class="trending-content-area">
-            <h3 class="trending-title">${p.title}</h3>
-            <p class="trending-excerpt">${p.excerpt}</p>
-            <div class="trending-meta">
-              <span class="trending-tag">${p.tag}</span>
-              <span class="trending-date">${p.date}</span>
-            </div>
-          </div>
-        `;
-        trendingItem.onclick = () => openModal(p);
-        trendingList.appendChild(trendingItem);
-      });
-    }
+// Trending section
+if (trendingList) {
+  posts.filter(p => p.trending === "TRUE").slice(0, 6).forEach(p => {
+    const trendingItem = document.createElement('div');
+    trendingItem.className = 'trending-item';
+    trendingItem.innerHTML = `
+      <img src="${p.img}" alt="${p.title}">
+      <div class="trending-content-area">
+        <h3 class="trending-title">${p.title}</h3>
+        <p class="trending-excerpt">${p.excerpt}</p>
+        <div class="trending-meta">
+          <span class="trending-tag">${p.tag}</span>
+          <span class="trending-date">${p.date}</span>
+        </div>
+      </div>
+    `;
+    trendingItem.onclick = () => openModal(p);
+    trendingList.appendChild(trendingItem);
+  });
+}
 
-    // Popular (hamburger panel / navbar extra)
-    if (popularRow) {
-      posts.filter(p => p.featured === "TRUE").slice(0, 4).forEach(p => {
-        const d = document.createElement('div');
-        d.className = 'popular-item';
-        d.innerHTML = `<strong>${p.title}</strong><p class="muted">${p.tag} • ${p.date}</p>`;
-        d.onclick = () => openModal(p);
-        popularRow.appendChild(d);
-      });
-    }
+// Popular
+if (popularRow) {
+  posts.filter(p => p.featured === "TRUE").slice(0, 4).forEach(p => {
+    const d = document.createElement('div');
+    d.className = 'popular-item';
+    d.innerHTML = `<strong>${p.title}</strong><p class="muted">${p.tag} • ${p.date}</p>`;
+    d.onclick = () => openModal(p);
+    popularRow.appendChild(d);
+  });
+}
 
     // Modal opener
     function openModal(p) {
