@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </article>
       `;
       hero.onclick = () => {
-        window.location.href = `post.html?id=${heroPost.id}`;
+        window.location.href = `pages/post.html?id=${heroPost.id}`;
       };
     }
 
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           `;
           card.onclick = () => {
-            window.location.href = `post.html?id=${p.id}`;
+            window.location.href = `pages/post.html?id=${p.id}`;
           };
           collage.appendChild(card);
         });
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         d.className = 'popular-item';
         d.innerHTML = `<strong>${p.title}</strong><p class="muted">${p.tag} • ${p.date}</p>`;
         d.onclick = () => {
-          window.location.href = `post.html?id=${p.id}`;
+          window.location.href = `pages/post.html?id=${p.id}`;
         };
         popularRow.appendChild(d);
       });
