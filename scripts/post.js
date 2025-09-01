@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById("post-container");
 
   fetchPosts().then(posts => {
-    const post = posts.find(p => p.id === postId);
+    // FIX: Compare as strings
+    const post = posts.find(p => String(p.id) === String(postId));
 
     if (!post) {
       container.innerHTML = "<p>⚠️ Post not found.</p>";
