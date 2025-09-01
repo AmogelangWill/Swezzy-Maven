@@ -219,3 +219,246 @@ body{padding-top:240px}
 .mobile-menu{width:98%}
 .popular-panel{width:98%}
 }
+
+@keyframes skeleton-pulse {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+.skeleton-line, .skeleton-img, .skeleton-tag {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: skeleton-pulse 1.5s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+/* Skeleton line variations */
+.skeleton-line {
+  height: 16px;
+  margin-bottom: 8px;
+}
+
+.skeleton-line.skeleton-title {
+  height: 32px;
+  width: 80%;
+  margin-bottom: 12px;
+}
+
+.skeleton-line.skeleton-text {
+  height: 16px;
+  width: 90%;
+  margin-bottom: 8px;
+}
+
+.skeleton-line.skeleton-text.short {
+  width: 60%;
+}
+
+.skeleton-line.skeleton-card-title {
+  height: 20px;
+  width: 85%;
+  margin-bottom: 6px;
+}
+
+.skeleton-line.skeleton-card-text {
+  height: 14px;
+  width: 70%;
+}
+
+.skeleton-line.skeleton-trending-title {
+  height: 24px;
+  width: 90%;
+  margin-bottom: 8px;
+}
+
+.skeleton-line.skeleton-trending-text {
+  height: 16px;
+  width: 95%;
+  margin-bottom: 6px;
+}
+
+.skeleton-line.skeleton-trending-text.short {
+  width: 75%;
+}
+
+.skeleton-line.skeleton-popular-title {
+  height: 18px;
+  width: 85%;
+  margin-bottom: 6px;
+}
+
+.skeleton-line.skeleton-popular-meta {
+  height: 14px;
+  width: 60%;
+}
+
+.skeleton-line.skeleton-date {
+  height: 12px;
+  width: 80px;
+}
+
+.skeleton-line.skeleton-date.short {
+  width: 60px;
+}
+
+/* Skeleton images */
+.skeleton-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card .skeleton-img {
+  height: 150px;
+  flex: 1;
+}
+
+.trending-item .skeleton-img {
+  width: 200px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.card-img-placeholder, .trending-img-placeholder {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: skeleton-pulse 1.5s infinite ease-in-out;
+}
+
+.featured .skeleton-img {
+  height: 280px;
+}
+
+/* Skeleton tags */
+.skeleton-tag {
+  display: inline-block;
+  height: 20px;
+  width: 60px;
+  border-radius: 6px;
+}
+
+.skeleton-tag.small {
+  height: 16px;
+  width: 50px;
+}
+
+/* Skeleton meta containers */
+.skeleton-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Skeleton card specific styling */
+.card.skeleton {
+  animation: none; /* Remove card hover animations during loading */
+  pointer-events: none; /* Disable clicks during loading */
+}
+
+.card.skeleton .meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Skeleton trending specific styling */
+.trending-item.skeleton {
+  pointer-events: none;
+}
+
+.trending-item.skeleton .trending-content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trending-item.skeleton .trending-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+/* Skeleton popular specific styling */
+.popular-item.skeleton {
+  pointer-events: none;
+}
+
+/* Error state styling */
+.error-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+  background: var(--card);
+  border-radius: 12px;
+  border: 2px dashed #e5e5e5;
+}
+
+/* Improved loading transitions */
+.card, .trending-item, .popular-item, .featured {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Optimize images for faster loading */
+img {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* Critical resource hints (add to HTML head) */
+/*
+<link rel="preload" href="images/blog_pics/cover.jpeg" as="image">
+<link rel="preload" href="images/nameLOGO.png" as="image">
+<link rel="dns-prefetch" href="https://docs.google.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+*/
+
+/* Dark mode skeleton support */
+@media (prefers-color-scheme: dark) {
+  .skeleton-line, .skeleton-img, .skeleton-tag, 
+  .card-img-placeholder, .trending-img-placeholder {
+    background: linear-gradient(90deg, #2a2a2a 25%, #404040 50%, #2a2a2a 75%);
+    background-size: 200px 100%;
+  }
+}
+
+/* Reduce animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-line, .skeleton-img, .skeleton-tag,
+  .card-img-placeholder, .trending-img-placeholder {
+    animation: none;
+    background: #f0f0f0;
+  }
+  
+  .card, .trending-item, .popular-item, .featured {
+    transition: none;
+  }
+}
+
+/* Mobile skeleton optimizations */
+@media (max-width: 768px) {
+  .skeleton-img {
+    height: 120px;
+  }
+  
+  .card .skeleton-img {
+    height: 100px;
+  }
+  
+  .trending-item .skeleton-img {
+    width: 100%;
+    height: 160px;
+  }
+  
+  .featured .skeleton-img {
+    height: 200px;
+  }
+}
