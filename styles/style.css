@@ -1,3 +1,4 @@
+/* ---- START OF ORIGINAL CSS ---- */
 .header-png:nth-child(1){height:260px}
 .header-png:nth-child(2){margin-left:-60px}
 
@@ -144,7 +145,9 @@ body{font-family:Oswald,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0
 .content-page{max-width:var(--maxw);margin:0 auto;padding:0 1rem}
 .contact-hero{text-align:center;padding:3rem 0;background:linear-gradient(135deg,rgba(0,155,59,.05),rgba(0,155,59,.02));border-radius:16px;margin:2rem 0}
 .contact-hero h1{font-size:clamp(2rem,4vw,3rem);margin:0 0 1rem 0;color:var(--text);font-weight:700}
+
 .page-excerpt{font-size:1.2rem;color:var(--muted);margin:0;max-width:600px;margin:0 auto;line-height:1.6}
+
 .contact-container{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin:3rem 0}
 .contact-card{background:var(--card);border-radius:16px;padding:2rem;box-shadow:0 8px 30px rgba(2,6,23,.06);border:1px solid #e5e5e5;height:fit-content}
 .contact-card h2{font-size:1.5rem;font-weight:700;margin:0 0 2rem 0;color:var(--text)}
@@ -156,6 +159,7 @@ body{font-family:Oswald,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0
 .contact-item p{color:var(--muted);margin:0;line-height:1.5}
 .contact-form-wrapper{background:var(--card);border-radius:16px;padding:2rem;box-shadow:0 8px 30px rgba(2,6,23,.06);border:1px solid #e5e5e5}
 .contact-form h2{font-size:1.5rem;font-weight:700;margin:0 0 2rem 0;color:var(--text)}
+
 .form-group{margin-bottom:1.5rem}
 .form-group label{display:block;margin-bottom:.5rem;font-weight:600;color:var(--text);font-size:.95rem}
 .form-group input,.form-group textarea{width:100%;padding:12px 16px;border:2px solid #e5e5e5;border-radius:8px;font-size:1rem;transition:all .3s ease;font-family:inherit;background:var(--bg);color:var(--text);box-sizing:border-box}
@@ -164,7 +168,8 @@ body{font-family:Oswald,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0
 .submit-btn{background:var(--accent);color:#fff;border:0;padding:14px 32px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;transition:all .3s ease;width:100%}
 .submit-btn:hover{background:#007a2f;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,155,59,.3)}
 
-.single-post img, .post-image {max-width: 100%; height: auto; display: block; margin: 20px auto;}
+.single-post img,.post-image{max-width:100%;height:auto;display:block;margin:20px auto}
+
 @media (max-width:768px){
 .brand-bar,.nav-bar{padding:0 1rem}
 .brand-right,.brand-left,.menu,.desktop-social{display:none}
@@ -215,3 +220,4 @@ body{padding-top:240px}
 .mobile-menu{width:98%}
 .popular-panel{width:98%}
 }
+
