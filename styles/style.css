@@ -264,4 +264,65 @@ body{padding-top:240px}
 .mobile-menu{width:98%}
 .popular-panel{width:98%}
 }
+/* === Mobile special layout for certain cards === */
+@media (max-width:768px){
+  /* reset all cards to default full layout first */
+  .card{
+    display:flex;
+    flex-direction:column;
+  }
+  .card img{
+    height:auto;
+    width:100%;
+  }
+  .card .meta{
+    display:block;
+    padding:12px;
+    background:#fff;
+  }
+
+  /* cards 1, 4, 5 → image + title overlay only */
+  #collage .card:nth-child(1),
+  #collage .card:nth-child(4),
+  #collage .card:nth-child(5){
+    position:relative;
+  }
+  #collage .card:nth-child(1) img,
+  #collage .card:nth-child(4) img,
+  #collage .card:nth-child(5) img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  #collage .card:nth-child(1) .meta,
+  #collage .card:nth-child(4) .meta,
+  #collage .card:nth-child(5) .meta{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+    color:#fff;
+    padding:8px 12px;
+  }
+  #collage .card:nth-child(1) .meta .excerpt,
+  #collage .card:nth-child(4) .meta .excerpt,
+  #collage .card:nth-child(5) .meta .excerpt,
+  #collage .card:nth-child(1) .meta .tag,
+  #collage .card:nth-child(4) .meta .tag,
+  #collage .card:nth-child(5) .meta .tag,
+  #collage .card:nth-child(1) .meta .muted,
+  #collage .card:nth-child(4) .meta .muted,
+  #collage .card:nth-child(5) .meta .muted{
+    display:none; /* hide excerpt, tag, date */
+  }
+  #collage .card:nth-child(1) .title,
+  #collage .card:nth-child(4) .title,
+  #collage .card:nth-child(5) .title{
+    font-size:1.1rem;
+    font-weight:700;
+    margin:0;
+    color:#fff;
+  }
+}
 
