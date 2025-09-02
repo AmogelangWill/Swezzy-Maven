@@ -20,7 +20,7 @@ body{font-family:Oswald,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0
 
 .brand-bar{background:#000;height:136px;display:flex;align-items:center;justify-content:center;padding:0 2rem;border-bottom:1px solid #333;position:relative}
 .brand-container{max-width:var(--maxw);width:100%;display:flex;justify-content:space-between;align-items:center;position:relative}
-.brand-left{display:flex;gap:.75rem;align-items:center}
+.brand-leftindex,.brand-left{display:flex;gap:.75rem;align-items:center}
 .brand-center{display:flex;align-items:center;justify-content:center;gap:0;position:absolute;left:50%;transform:translateX(-50%)}
 .brand-right{display:flex;gap:.75rem;align-items:center}
 
@@ -173,7 +173,7 @@ body{font-family:Oswald,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0
 
 @media (max-width:768px){
 .brand-bar,.nav-bar{padding:0 1rem}
-.brand-right,.menu,.desktop-social{display:none}
+.brand-leftindex,.brand-right,.menu,.desktop-social{display:none}
 .brand-left,.brand-center{position:static;transform:none;justify-content:center;width:100%}
 .mobile-menu{position:fixed;left:50%;top:290px;transform:translateX(-50%);width:95%;max-width:none;border-radius:12px;padding:1.5rem;background:var(--card);box-shadow:0 10px 30px rgba(2,6,23,.08);z-index:70;display:none}
 .mobile-menu.show{display:block}
@@ -254,4 +254,3 @@ body{padding-top:240px}
   #collage .card:nth-child(4) .title,
   #collage .card:nth-child(5) .title{font-size:1.1rem;font-weight:700;margin:0;color:#fff;}
 }
-
