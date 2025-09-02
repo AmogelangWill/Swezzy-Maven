@@ -173,8 +173,8 @@ body{font-family:Oswald,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0
 
 @media (max-width:768px){
 .brand-bar,.nav-bar{padding:0 1rem}
-.brand-right,.brand-left,.menu,.desktop-social{display:none}
-.brand-center{position:static;transform:none;justify-content:center;width:100%}
+.brand-right,.menu,.desktop-social{display:none}
+.brand-left,.brand-center{position:static;transform:none;justify-content:center;width:100%}
 .mobile-menu{position:fixed;left:50%;top:290px;transform:translateX(-50%);width:95%;max-width:none;border-radius:12px;padding:1.5rem;background:var(--card);box-shadow:0 10px 30px rgba(2,6,23,.08);z-index:70;display:none}
 .mobile-menu.show{display:block}
 .mobile-menu-items{display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem}
