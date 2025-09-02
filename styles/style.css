@@ -1,208 +1,217 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" type="image/jpeg" href="images/whitebg_black_logo.jpg">
-    <title>Swezzy Maven</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+.header-png:nth-child(1){height:260px}
+.header-png:nth-child(2){margin-left:-60px}
 
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
+*{box-sizing:border-box}
 
-  <body class="light">
-    <!-- Three-row header structure -->
-    <header class="header-wrapper">
-      <!-- Row 1: Slogan -->
-      <div class="slogan-bar">
-        <p>Your Green Carpet to Entertainment</p>
-      </div>
-      
-      <!-- Row 2: Logo and Social Icons -->
-      <div class="brand-bar">
-  <div class="brand-container">
-    <div class="brand-left">
-      <a class="social-icon" href="https://www.instagram.com/swezzy.maven" target="_blank" aria-label="instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.976.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.976-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.976-.975-1.248-2.242-1.31-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.976 2.242-1.248 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0 3.838c-2.708 0-4.999 2.291-4.999 4.999S9.292 16.999 12 16.999s4.999-2.291 4.999-4.999S14.708 6.001 12 6.001zm5.215-2.407c-.633 0-1.146.512-1.146 1.146s.513 1.146 1.146 1.146 1.146-.513 1.146-1.146-.513-1.146-1.146-1.146z"/>
-        </svg>
-      </a>
-      <a class="social-icon" href="https://www.youtube.com/@SwezzyMaven" target="_blank" aria-label="youtube">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-        </svg>
-      </a>
-      <a class="social-icon" href="https://www.tiktok.com/@swezzy.maven" target="_blank" aria-label="tiktok">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-        </svg>
-      </a>
-    </div>
-    <div class="brand-center">
-      <img src="images/nameLOGO.png" alt="Logo PNG" class="header-png">
-      
-    </div>
-    <div class="brand-right">
-      <button class="subscribe-btn">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-        </svg>
-        Subscribe
-      </button>
-    </div>
-  </div>
-</div>
-      
-      <!-- Row 3: Navigation -->
-      <nav class="nav-bar">
-        <div class="nav-container">
-          <button id="hamburger" class="hamburger" aria-label="Open menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-          <div class="menu desktop-menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="pages/art.html">Art</a></li>
-              <li><a href="pages/lifestyle.html">LifeStyle</a></li>
-              <li><a href="pages/music.html">Music</a></li>
-              <li><a href="pages/sports.html">Sports</a></li>
-              <li><a href="pages/fashion.html">Fashion</a></li>
-              <li><a href="pages/contact.html">Get in touch</a></li>
-            </ul>
-          </div>
-          <button id="searchToggle" class="search-toggle" aria-label="Search">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="11" cy="11" r="8"/>
-              <path d="m21 21-4.35-4.35"/>
-            </svg>
-          </button>
-        </div>
-      </nav>
-    </header>
-    
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="mobile-menu">
-      <div class="mobile-menu-content">
-        <ul class="mobile-nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/art.html">Art</a></li>
-          <li><a href="pages/lifestyle.html">LifeStyle</a></li>
-          <li><a href="pages/music.html">Music</a></li>
-          <li><a href="pages/sports.html">Sports</a></li>
-          <li><a href="pages/fashion.html">Fashion</a></li>
-          <li><a href="pages/contact.html">Get in touch</a></li>
-        </ul>
-        <div class="mobile-social">
-          <a class="mobile-social-icon" href="https://www.instagram.com/swezzy.maven" target="_blank" aria-label="instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.976.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.976-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.976-.975-1.248-2.242-1.31-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.976 2.242-1.248 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0 3.838c-2.708 0-4.999 2.291-4.999 4.999S9.292 16.999 12 16.999s4.999-2.291 4.999-4.999S14.708 6.001 12 6.001zm5.215-2.407c-.633 0-1.146.512-1.146 1.146s.513 1.146 1.146 1.146 1.146-.513 1.146-1.146-.513-1.146-1.146-1.146z"/>
-            </svg>
-          </a>
-          <a class="mobile-social-icon" href="https://www.youtube.com/@SwezzyMaven" target="_blank" aria-label="youtube">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
-          </a>
-          <a class="mobile-social-icon" href="https://www.tiktok.com/@swezzy.maven" target="_blank" aria-label="tiktok">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <aside id="popularPanel" class="popular-panel">
-      <h3>Popular</h3>
-      <div id="popularRow" class="popular-row"></div>
-    </aside>
-    
-    <main>
-      <section class="hero" id="hero">
-        <article class="featured">
-          <div class="featured-left">
-            <h1>Breaking: Swezzy Maven returns better clean, fast, tasteful.</h1>
-            <p class="lede">A minimalist news-first layout where the current story is the star. Smooth animations and tasteful accents.</p>
-            <div class="meta">
-              <time datetime="2025-08-28">Aug 28, 2025</time>
-              <span class="tag">News</span>
-            </div>
-          </div>
-          <div class="featured-img">
-            <img src="images/blog_pics/cover.jpeg" alt="">
-          </div>
-        </article>
-      </section>
-      
-      <section class="recent">
-        <h2>Recent Updates</h2>
-        <div id="collage" class="collage"></div>
-        <div class="view-all">
-          <a href="index.html">View more updates</a>
-        </div>
-      </section>
-      
-      <section class="trending-section">
-        <div class="trending-content">
-          <div class="trending-posts">
-            <h2>Trending Updates</h2>
-            <div id="trendingList" class="trending-list"></div>
-          </div>
-          
-          <div class="social-sidebar">
-            <div class="social-follow-card">
-              <h3>Join Our Community</h3>
-              <div class="social-grid">
-                <a href="https://www.instagram.com/swezzy.maven" target="_blank" class="social-stat-item">
-                  <svg viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.976.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.976-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.976-.975-1.248-2.242-1.31-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.976 2.242-1.248 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0 3.838c-2.708 0-4.999 2.291-4.999 4.999S9.292 16.999 12 16.999s4.999-2.291 4.999-4.999S14.708 6.001 12 6.001zm5.215-2.407c-.633 0-1.146.512-1.146 1.146s.513 1.146 1.146 1.146 1.146-.513 1.146-1.146-.513-1.146-1.146-1.146z"/>
-                  </svg>
-                  <span class="follower-count">43.6K</span>
-                </a>
-                
-                <a href="https://www.youtube.com/@SwezzyMaven" target="_blank" class="social-stat-item">
-                  <svg viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                  </svg>
-                  <span class="follower-count">...</span>
-                </a>
-                
-                <a href="https://www.tiktok.com/@swezzy.maven" target="_blank" class="social-stat-item">
-                  <svg viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-                  </svg>
-                  <span class="follower-count">105.6K</span>
-                </a>
-              </div>
-              <p class="social-cta-text">Stay updated with our latest stories</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    
-    <footer class="site-footer">
-      <small>© Swezzy Maven</small>
-    </footer>
-    
-    <div id="articleModal" class="modal" aria-hidden="true">
-      <div class="modal-dialog">
-        <button id="modalClose" class="modal-close">×</button>
-        <div class="modal-body">
-          <h2 id="modalTitle"></h2>
-          <p id="modalDate" class="muted"></p>
-          <img id="modalImage" src="" alt="">
-          <div id="modalContent"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div id="searchBar" class="searchbar hidden">
-      <input id="searchInput" placeholder="Search Blogs...">
-    </div>
-    <script src="scripts/cms.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
-</html>
+:root{--bg:#fff;--text:#0b0b0b;--muted:#6b7280;--accent:#009B3B;--card:#fff;--maxw:1100px}
+
+.icon-btn{background:0;border:0;padding:8px;border-radius:8px;cursor:pointer;font-size:1.2rem;transition:all .3s ease}
+.icon-btn:hover{background:rgba(0,155,59,.1);transform:scale(1.1)}
+
+body{font-family:Oswald,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0;background:var(--bg);color:var(--text);padding-top:280px;overflow-x:hidden}
+
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--bg);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+
+.slogan-bar{background:#fff;height:64px;display:flex;align-items:center;justify-content:center;border-bottom:2px solid var(--accent)}
+.slogan-content{display:flex;align-items:center;gap:.5rem}
+.slogan-logo{height:24px;width:auto;object-fit:contain}
+.slogan-bar p{margin:0;font-size:.85rem;color:#0b0b0b;font-weight:700;letter-spacing:.5px}
+
+.brand-bar{background:#000;height:136px;display:flex;align-items:center;justify-content:center;padding:0 2rem;border-bottom:1px solid #333;position:relative}
+.brand-container{max-width:var(--maxw);width:100%;display:flex;justify-content:space-between;align-items:center;position:relative}
+.brand-left{display:flex;gap:.75rem;align-items:center}
+.brand-center{display:flex;align-items:center;justify-content:center;gap:0;position:absolute;left:50%;transform:translateX(-50%)}
+.brand-right{display:flex;gap:.75rem;align-items:center}
+
+.subscribe-btn{background:var(--accent);color:#fff;border:0;padding:10px 16px;border-radius:0;font-weight:600;font-size:.9rem;display:flex;align-items:center;gap:.5rem;transition:all .3s ease;cursor:pointer}
+.subscribe-btn:hover{background:#007a2f;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,155,59,.3)}
+.subscribe-btn svg{width:16px;height:16px}
+
+.header-png{height:130px;width:auto;object-fit:contain}
+.header-png:nth-child(1){height:208px}
+.header-png:nth-child(2){margin-left:-50px}
+
+.logo-img{width:48px;height:48px;object-fit:contain;border:2px solid transparent;border-radius:8px;padding:4px;background:linear-gradient(white,white) padding-box,linear-gradient(135deg,var(--accent),#00d847) border-box}
+.brand-name{font-size:1.5rem;font-weight:700;color:#fff}
+.desktop-social{display:flex}
+
+.social-icon{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;transition:all .3s ease;border:1px solid #333}
+.social-icon:hover{transform:translateY(-3px);box-shadow:0 4px 12px rgba(0,155,59,.3);border-color:var(--accent)}
+.social-icon svg{width:20px;height:20px}
+.social-icon svg path{fill:var(--accent)}
+
+.nav-bar{background:#fff;height:96px;display:flex;align-items:center;padding:0 2rem;position:relative}
+.nav-bar::before{content:'';position:absolute;bottom:0;left:20%;right:20%;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent)}
+.nav-container{max-width:var(--maxw);width:100%;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+
+.hamburger{background:0;border:0;padding:8px;border-radius:8px;cursor:pointer;display:flex;flex-direction:column;gap:4px;transition:all .3s ease}
+.hamburger:hover{background:rgba(0,155,59,.1)}
+.hamburger .bar{width:22px;height:2px;background:var(--text);border-radius:2px;transition:all .3s ease}
+.hamburger:hover .bar{background:var(--accent)}
+
+.menu{flex:1;display:flex;justify-content:center}
+.menu ul{display:flex;gap:.6rem;list-style:none;margin:0;padding:0}
+.menu a{color:var(--text);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:800;font-size:.95rem;transition:all .3s ease;position:relative}
+.menu a::after{content:'';position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);width:0;height:2px;background:var(--accent);transition:width .3s ease}
+.menu a:hover::after{width:80%}
+.menu a:hover{color:var(--accent)}
+
+.search-toggle{background:0;border:0;padding:8px;border-radius:8px;cursor:pointer;color:var(--text);transition:all .3s ease}
+.search-toggle:hover{background:rgba(0,155,59,.1);color:var(--accent)}
+.search-toggle svg{width:20px;height:20px}
+
+.popular-panel{position:fixed;left:50%;top:290px;transform:translateX(-50%);width:90%;max-width:880px;border-radius:12px;padding:14px;background:var(--card);box-shadow:0 10px 30px rgba(2,6,23,.08);z-index:70;display:none}
+.popular-panel.show{display:block}
+.popular-row{display:flex;gap:12px;overflow:auto;padding:6px}
+.popular-item{min-width:260px;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,0));border-radius:10px;padding:12px;box-shadow:0 6px 18px rgba(2,6,23,.06);cursor:pointer;transition:transform .25s}
+
+.mobile-menu{position:fixed;left:50%;top:290px;transform:translateX(-50%);width:90%;max-width:880px;border-radius:12px;padding:1.5rem;background:var(--card);box-shadow:0 10px 30px rgba(2,6,23,.08);z-index:70;display:none;border:1px solid #e5e5e5}
+.mobile-menu.show{display:block}
+.mobile-nav-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem}
+.mobile-nav-list a{color:var(--text);text-decoration:none;padding:16px 20px;font-weight:700;font-size:1.1rem;transition:all .3s ease;display:block;position:relative;border-left:4px solid transparent}
+.mobile-nav-list a:hover{color:var(--accent);border-left-color:var(--accent);background:rgba(0,155,59,.08);transform:translateX(8px)}
+.mobile-social{display:flex;justify-content:center;gap:1.2rem;padding-top:1.5rem;border-top:2px solid #e5e5e5}
+.mobile-social-icon{width:48px;height:48px;background:#000;border:2px solid #333;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .3s ease;text-decoration:none}
+.mobile-social-icon svg{width:22px;height:22px}
+.mobile-social-icon svg path{fill:#fff}
+.mobile-social-icon:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,155,59,.4)}
+
+.featured{max-width:var(--maxw);width:100%;display:grid;grid-template-columns:1fr 420px;gap:1.25rem;align-items:center;background:var(--card);padding:2rem;border-radius:14px;box-shadow:0 12px 40px rgba(2,6,23,.06);margin:1.5rem auto;cursor:pointer;transition:transform .28s,box-shadow .28s}
+.featured:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(2,6,23,.12),0 0 0 2px var(--accent)}
+.featured-left h1{font-size:clamp(1.5rem,3.6vw,2.6rem);margin:0}
+.lede{color:var(--muted);margin-top:.6rem}
+.featured-img img{width:100%;height:auto;border-radius:8px;display:block}
+
+.recent{max-width:var(--maxw);margin:2.5rem auto;padding:0 1rem}
+.collage{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:160px;gap:14px;width:100%}
+
+.card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(2,6,23,.06);cursor:pointer;display:flex;flex-direction:column;transition:transform .28s,box-shadow .28s;min-width:0}
+.card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(2,6,23,.12),0 0 0 2px var(--accent)}
+.card img{width:100%;height:100%;object-fit:cover;flex:1}
+.card .meta{padding:12px;display:flex;align-items:center;justify-content:space-between}
+.card .title{font-weight:700;margin:0}
+.card .excerpt{color:var(--muted);font-size:.9rem;margin-top:6px}
+.card.span2x2{grid-column:span 3;grid-row:span 2}
+.card.span2x1{grid-column:span 3;grid-row:span 1}
+.card.span1x2{grid-column:span 2;grid-row:span 2}
+.card.span1x1{grid-column:span 2;grid-row:span 1}
+.card.span4x1{grid-column:span 4;grid-row:span 1}
+
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,.6);z-index:120}
+.modal.show{display:flex}
+.modal-dialog{background:var(--card);padding:1.25rem;border-radius:12px;max-width:820px;width:94%;box-shadow:0 20px 60px rgba(2,6,23,.18)}
+.modal-close{position:absolute;right:22px;top:18px;border:0;background:0;font-size:28px;cursor:pointer}
+
+.searchbar{position:fixed;right:18px;top:290px;background:rgba(255,255,255,.9);backdrop-filter:blur(4px);padding:6px;border-radius:10px;box-shadow:0 8px 22px rgba(2,6,23,.08);display:none}
+.searchbar.show{display:block}
+
+.trending-section{max-width:var(--maxw);margin:3rem auto;padding:0 1rem}
+.trending-content{display:grid;grid-template-columns:3fr 1fr;gap:3rem;align-items:start}
+.trending-posts h2{font-size:2rem;margin-bottom:2rem;color:var(--text)}
+.trending-list{display:flex;flex-direction:column;gap:1.5rem}
+.trending-item{display:flex;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(2,6,23,.06);transition:all .3s ease;cursor:pointer;height:140px}
+.trending-item:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(2,6,23,.12),0 0 0 2px var(--accent)}
+.trending-item img{width:200px;height:140px;object-fit:cover;flex-shrink:0}
+.trending-content-area{padding:1.5rem;display:flex;flex-direction:column;justify-content:space-between;flex:1}
+.trending-title{font-size:1.2rem;font-weight:700;margin:0 0 .5rem 0;color:var(--text);line-height:1.3}
+.trending-excerpt{color:var(--muted);margin:0 0 1rem 0;line-height:1.4;flex:1}
+.trending-meta{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+.trending-tag{background:var(--accent);color:#fff;padding:4px 8px;border-radius:6px;font-size:.8rem;font-weight:600}
+.trending-date{color:var(--muted);font-size:.9rem}
+
+.social-sidebar{position:sticky;top:300px}
+.social-follow-card{background:var(--card);border-radius:16px;padding:1.5rem;box-shadow:0 8px 30px rgba(2,6,23,.06);border:1px solid #e5e5e5;text-align:center}
+.social-follow-card h3{font-size:1.3rem;font-weight:700;margin:0 0 1.5rem 0;color:var(--text)}
+.social-grid{display:flex;justify-content:space-around;gap:1rem;margin-bottom:1.5rem}
+.social-stat-item{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--text);transition:all .3s ease;padding:.75rem;border-radius:12px;background:rgba(0,155,59,.02);border:1px solid rgba(0,155,59,.1);flex:1}
+.social-stat-item:hover{transform:translateY(-2px);background:rgba(0,155,59,.08);border-color:var(--accent);box-shadow:0 4px 12px rgba(0,155,59,.2)}
+.social-stat-item svg{width:28px;height:28px;margin-bottom:.5rem;color:var(--accent)}
+.follower-count{font-size:1.1rem;font-weight:700;color:var(--text)}
+.social-cta-text{color:var(--muted);font-size:.9rem;margin:0;line-height:1.4}
+
+.site-footer{background:var(--card);border-top:1px solid #e5e5e5;padding:2rem;text-align:center;margin-top:4rem}
+.site-footer small{color:var(--muted);font-size:.9rem}
+
+.tag{background:var(--accent);color:#fff;padding:4px 8px;border-radius:6px;font-size:.8rem;font-weight:600}
+.meta{display:flex;align-items:center;gap:1rem;margin-top:1rem}
+.meta time{color:var(--muted);font-size:.9rem}
+.muted{color:var(--muted)}
+
+.view-all{text-align:center;margin-top:2rem}
+.view-all a{color:var(--accent);text-decoration:none;font-weight:600;padding:.75rem 1.5rem;border:2px solid var(--accent);border-radius:8px;transition:all .3s ease}
+.view-all a:hover{background:var(--accent);color:#fff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,155,59,.3)}
+
+.content-page{max-width:var(--maxw);margin:0 auto;padding:0 1rem}
+.contact-hero{text-align:center;padding:3rem 0;background:linear-gradient(135deg,rgba(0,155,59,.05),rgba(0,155,59,.02));border-radius:16px;margin:2rem 0}
+.contact-hero h1{font-size:clamp(2rem,4vw,3rem);margin:0 0 1rem 0;color:var(--text);font-weight:700}
+.page-excerpt{font-size:1.2rem;color:var(--muted);margin:0;max-width:600px;margin:0 auto;line-height:1.6}
+.contact-container{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin:3rem 0}
+.contact-card{background:var(--card);border-radius:16px;padding:2rem;box-shadow:0 8px 30px rgba(2,6,23,.06);border:1px solid #e5e5e5;height:fit-content}
+.contact-card h2{font-size:1.5rem;font-weight:700;margin:0 0 2rem 0;color:var(--text)}
+.contact-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:2rem;padding:1rem;border-radius:12px;background:rgba(0,155,59,.02);border:1px solid rgba(0,155,59,.1);transition:all .3s ease}
+.contact-item:hover{background:rgba(0,155,59,.05);border-color:var(--accent);transform:translateY(-2px)}
+.contact-icon{width:48px;height:48px;background:var(--accent);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-icon svg{width:24px;height:24px;color:#fff}
+.contact-item h3{font-size:1.1rem;font-weight:700;margin:0 0 .5rem 0;color:var(--text)}
+.contact-item p{color:var(--muted);margin:0;line-height:1.5}
+.contact-form-wrapper{background:var(--card);border-radius:16px;padding:2rem;box-shadow:0 8px 30px rgba(2,6,23,.06);border:1px solid #e5e5e5}
+.contact-form h2{font-size:1.5rem;font-weight:700;margin:0 0 2rem 0;color:var(--text)}
+.form-group{margin-bottom:1.5rem}
+.form-group label{display:block;margin-bottom:.5rem;font-weight:600;color:var(--text);font-size:.95rem}
+.form-group input,.form-group textarea{width:100%;padding:12px 16px;border:2px solid #e5e5e5;border-radius:8px;font-size:1rem;transition:all .3s ease;font-family:inherit;background:var(--bg);color:var(--text);box-sizing:border-box}
+.form-group input:focus,.form-group textarea:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,155,59,.1)}
+.form-group textarea{resize:vertical;min-height:120px}
+.submit-btn{background:var(--accent);color:#fff;border:0;padding:14px 32px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;transition:all .3s ease;width:100%}
+.submit-btn:hover{background:#007a2f;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,155,59,.3)}
+
+.single-post img, .post-image {max-width: 100%; height: auto; display: block; margin: 20px auto;}
+@media (max-width:768px){
+.brand-bar,.nav-bar{padding:0 1rem}
+.brand-right,.brand-left,.menu,.desktop-social{display:none}
+.brand-center{position:static;transform:none;justify-content:center;width:100%}
+.mobile-menu{position:fixed;left:50%;top:290px;transform:translateX(-50%);width:95%;max-width:none;border-radius:12px;padding:1.5rem;background:var(--card);box-shadow:0 10px 30px rgba(2,6,23,.08);z-index:70;display:none}
+.mobile-menu.show{display:block}
+.mobile-menu-items{display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem}
+.mobile-menu-items a{color:var(--text);text-decoration:none;padding:12px 16px;border-radius:8px;font-weight:800;font-size:1rem;transition:all .3s ease;border-left:3px solid transparent}
+.mobile-menu-items a:hover{background:rgba(0,155,59,.1);border-left-color:var(--accent);color:var(--accent)}
+.mobile-social-icons{display:flex;justify-content:center;gap:1rem;padding-top:1.5rem;border-top:1px solid #e5e5e5}
+.mobile-social-icons .social-icon{width:44px;height:44px;background:#000;border:1px solid #333}
+.mobile-social-icons .social-icon svg path{fill:#fff}
+.mobile-social-icons .social-icon:hover{background:var(--accent);border-color:var(--accent)}
+.featured{grid-template-columns:1fr;text-align:center;padding:1.5rem}
+.collage{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
+.card.span2x2,.card.span2x1,.card.span1x2,.card.span1x1,.card.span4x1{grid-column:span 1;grid-row:span 1}
+.trending-content{grid-template-columns:1fr;gap:2rem}
+.trending-item{flex-direction:column;height:auto}
+.trending-item img{width:100%;height:160px}
+.social-grid{flex-direction:column;gap:.75rem}
+.social-stat-item{flex-direction:row;justify-content:flex-start;gap:1rem;padding:1rem}
+.social-stat-item svg{margin-bottom:0}
+.contact-container{grid-template-columns:1fr;gap:2rem}
+.contact-hero{padding:2rem 1rem}
+.header-png{height:100px}
+.header-png:nth-child(1){height:166px}
+.header-png:nth-child(2){margin-left:-40px}
+.popular-panel{width:95%}
+.searchbar{right:2.5%}
+}
+
+@media (max-width:480px){
+body{padding-top:240px}
+.slogan-bar{height:56px}
+.slogan-bar p{font-size:.8rem}
+.brand-bar{height:112px}
+.logo-img{width:40px;height:40px}
+.brand-name{font-size:1.2rem}
+.nav-bar{height:80px}
+.social-icon{width:32px;height:32px}
+.social-icon svg{width:16px;height:16px}
+.menu ul{gap:.4rem}
+.menu a{font-size:.85rem;padding:6px 8px}
+.popular-panel,.searchbar,.mobile-menu{top:250px}
+.header-png{height:90px}
+.contact-hero{padding:1.5rem}
+.contact-card,.contact-form-wrapper{padding:1.5rem}
+.mobile-menu{width:98%}
+.popular-panel{width:98%}
+}
